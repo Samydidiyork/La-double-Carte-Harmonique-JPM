@@ -39,6 +39,11 @@ Les logiciels actuels (MuseScore, Sibelius, Dorico) proposent de la notation mus
 | **Analyse des relations** | Notes pivots en vert, tensions en orange, frottements chromatiques en rouge |
 | **Assistant contrepoint** | Suggérer des notes candidates pour la portée 2 selon les règles contrapuntiques |
 | **Improvisation guidée** | Entrer un motif germinatif (2-3 notes), proposer des dérives dans le cadre de la double carte |
+| **Coloration harmonique** | Tonique en rouge, tierce en vert, autres notes en neutre — code visuel sur les portées et la tablature |
+| **Glisser-déposer** | Placer et déplacer les notes directement sur les portées à la souris ou au doigt |
+| **Tablature chiffrée** | Affichage des numéros de cases sur les 6 cordes, avec convention 0 = corde à vide |
+| **Roue du cycle des quintes** | Visualisation interactive pour choisir les tonalités des deux cartes et leurs relations |
+| **Substitution par silence** | Quand une voix atteint la quarte, remplacer la note par un silence (respiration mélodique) |
 | **Export** | MIDI, MusicXML, PDF |
 
 ---
@@ -57,6 +62,29 @@ Les logiciels actuels (MuseScore, Sibelius, Dorico) proposent de la notation mus
 - Croisements de voix
 - Sauts augmentés ou diminués non préparés
 - Unisson par mouvement direct non préparé
+
+### Code visuel — Coloration des notes
+
+| Couleur | Fonction | Rôle |
+|---------|----------|------|
+| 🔴 Rouge | Tonique (fondamentale) | Ancrage tonal — note structurelle principale |
+| 🟢 Vert | Tierce (3e min ou maj) | Caractère majeur ou mineur de l'accord |
+| ⚪ Neutre | Autres notes | Septième, sixte, notes de passage |
+
+Ce code s'applique simultanément sur les deux portées et sur la tablature guitare.
+
+### Règle de substitution par silence à la quarte
+
+Lorsqu'une voix atteint l'intervalle de **quarte juste** (5 demi-tons) par rapport à la tonique, la note est substituée par un **silence** :
+
+- La quarte crée une tension suspendue difficile à résoudre sans préparation
+- Le silence à cet endroit libère l'espace mélodique et donne une **respiration naturelle** à la phrase
+- Cette règle s'applique voix par voix, indépendamment de l'autre carte
+
+```
+Exemple en Do majeur :
+Do Ré Mi Fa → Do Ré Mi 𝄽 (silence à Fa = quarte)
+```
 
 ### Les relations entre tonalités
 - **Tierce mineure** — proche, clair-obscur
